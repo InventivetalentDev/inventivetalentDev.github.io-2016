@@ -1,0 +1,127 @@
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 20px;
+}
+p.small {
+    font-size: 16px;
+}
+
+.custom-navbar {
+    background: #7707cc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.custom-navbar .navbar-nav li a {
+    color: #22aacc;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #218dae;
+}
+
+.header {
+    text-align: center;
+    background: #22aacc;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+
+.header .avatar {
+    padding: 20px;
+}
+
+.header .alias {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.header .name {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.header .shortBio {
+    font-size: 18px;
+}
+
+.section-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.project-tile {
+    height: 260px;
+    padding: 20px;
+
+    margin: 0 0 15px;
+    right: 0;
+}
+
+.project-tile .project-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+    .project-tile {
+        margin: 0 0 30px;
+    }
+}
+
+.aboutText {
+
+}
+
+.aboutIntro {
+    font-size: 18px;
+}
+
+.footer {
+    text-align: center;
+    background: #7707cc;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.social-button {
+    color: #22aacc;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 55px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.br-12 {
+    display: block;
+    margin: -12px 0;
+}
+
+.br8 {
+    display: block;
+    margin: 8px 0;
+}
+
+.br8 {
+    display: block;
+    margin: 4px 0;
+}
+
+a {
+    color: #7707cc;
+}
