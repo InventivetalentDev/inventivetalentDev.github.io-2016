@@ -6,6 +6,7 @@ body {
 p {
     font-size: 20px;
 }
+
 p.small {
     font-size: 16px;
 }
@@ -48,6 +49,10 @@ p.small {
 
 .header .shortBio {
     font-size: 18px;
+}
+
+.avatar {
+    margin: 0 auto;
 }
 
 .section-header {
