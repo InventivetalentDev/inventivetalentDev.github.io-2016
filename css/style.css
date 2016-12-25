@@ -34,6 +34,7 @@ p.small {
 
 .header .avatar {
     padding: 20px;
+    margin: 0 auto;
 }
 
 .header .alias {
@@ -49,10 +50,6 @@ p.small {
 
 .header .shortBio {
     font-size: 18px;
-}
-
-.avatar {
-    margin: 0 auto;
 }
 
 section {
