@@ -47,13 +47,22 @@ $(document).ready(function () {
         $("#dynamicModal").modal({show: true});
     }
 
+    function showDynamicModalForElement(element) {
+        var title = element.data("modal-title");
+        var url = element.data("modal-url");
+        var size = element.data("modal-size");
+        showDynamicModal(title, url, size);
+    }
+
+    if (location.hash.length > 0) {
+        if ($(location.hash).hasClass("dynamic-modal-trigger")) {
+            showDynamicModalForElement($(location.hash));
+        }
+    }
 
     $(".dynamic-modal-trigger").click(function (e) {
         e.preventDefault();
 
-        var title = $(this).data("modal-title");
-        var url = $(this).data("modal-url");
-        var size = $(this).data("modal-size");
-        showDynamicModal(title, url, size);
+        showDynamicModalForElement($(this));
     });
 });
