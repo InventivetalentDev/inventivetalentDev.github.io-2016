@@ -28,7 +28,7 @@ p.small {
 .header {
     text-align: center;
     background: #22aacc;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     padding-top: 60px;
 }
 
@@ -53,6 +53,11 @@ p.small {
 
 .avatar {
     margin: 0 auto;
+}
+
+section {
+    padding-top:10px;
+    padding-bottom: 30px;
 }
 
 .section-header {
