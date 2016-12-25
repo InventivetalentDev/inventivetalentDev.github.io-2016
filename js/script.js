@@ -31,21 +31,29 @@ $(document).ready(function () {
     $("#randomQuotes").text(quotes[Math.floor(Math.random() * quotes.length)]);
 
     // Dynamic modal
-    function showDynamicModalFromUrl(title, url) {
+    function showDynamicModal(title, url, size) {
+        $("#dynamicModalDialog").removeClass("modal-sm");
+        $("#dynamicModalDialog").removeClass("modal-lg");
+        if (size === "sm") {
+            $("#dynamicModalDialog").addClass("modal-sm");
+        }
+        if (size === "lg") {
+            $("#dynamicModalDialog").addClass("modal-lg");
+        }
+
+
         $("#dynamicModalTitle").text(title);
         $("#dynamicModalBody").load(url);
+        $("#dynamicModal").modal({show: true});
     }
 
-    function showDynamicModal(title, body) {
-        $("#dynamicModalTitle").text(title);
-        $("#dynamicModalBody").html(body);
-    }
 
     $(".dynamic-modal-trigger").click(function (e) {
         e.preventDefault();
 
         var title = $(this).data("modal-title");
         var url = $(this).data("modal-url");
-        showDynamicModalFromUrl(title, url);
+        var size = $(this).data("modal-size");
+        showDynamicModal(title, url, size);
     });
 });
