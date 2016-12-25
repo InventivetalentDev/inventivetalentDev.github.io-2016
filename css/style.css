@@ -11,6 +11,14 @@ p.small {
     font-size: 16px;
 }
 
+a {
+    color: #7707cc;
+}
+
+.footer a {
+    color: #22aacc;
+}
+
 .custom-navbar {
     background: #7707cc;
     text-transform: uppercase;
@@ -53,7 +61,7 @@ p.small {
 }
 
 section {
-    padding-top:10px;
+    padding-top: 10px;
     padding-bottom: 30px;
 }
 
@@ -129,6 +137,3 @@ section {
     margin: 4px 0;
 }
 
-a {
-    color: #7707cc;
-}
