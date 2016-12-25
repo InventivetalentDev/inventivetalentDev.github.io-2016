@@ -29,4 +29,23 @@ $(document).ready(function () {
         "If you're homophobic you should probably leave now and get some help."
     ];
     $("#randomQuotes").text(quotes[Math.floor(Math.random() * quotes.length)]);
+
+    // Dynamic modal
+    function showDynamicModalFromUrl(title, url) {
+        $("#dynamicModalTitle").text(title);
+        $("#dynamicModalBody").load(url);
+    }
+
+    function showDynamicModal(title, body) {
+        $("#dynamicModalTitle").text(title);
+        $("#dynamicModalBody").html(body);
+    }
+
+    $(".dynamic-modal-trigger").click(function (e) {
+        e.preventDefault();
+
+        var title = $(this).data("modal-title");
+        var url = $(this).data("modal-url");
+        showDynamicModalFromUrl(title, url);
+    });
 });
