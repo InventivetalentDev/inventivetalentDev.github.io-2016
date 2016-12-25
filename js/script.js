@@ -22,7 +22,7 @@ $(document).ready(function () {
             return diffDays;
         })("March 10, 1999", new Date()) / 365);
         $("#age").text(Math.round(exactAge * 1000) / 1000);
-        $("#age").attr("data-age", exactAge);
+        $("#age").attr("title", exactAge);
     }, 1000);
 
     var quotes = [
