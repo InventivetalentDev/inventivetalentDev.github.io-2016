@@ -12,7 +12,11 @@ p.small {
 }
 
 a {
-    color: #7707cc;
+    color: #5207C5;
+}
+
+a:focus, a:hover{
+    color: #430787;
 }
 
 .footer {
@@ -20,26 +24,26 @@ a {
 }
 
 .footer a {
-    color: #22aacc;
+    color: #06C7CA;
 }
 
 .custom-navbar {
-    background: #7707cc;
+    background: #5207C5;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .custom-navbar .navbar-nav li a {
-    color: #22aacc;
+    color: #06C7CA;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #218dae;
+    color: #06989b;
 }
 
 .header {
     text-align: center;
-    background: #22aacc;
+    background: #06C7CA;
     padding-bottom: 40px;
     padding-top: 60px;
 }
@@ -106,14 +110,14 @@ section {
 
 .footer {
     text-align: center;
-    background: #7707cc;
+    background: #5207C5;
     width: 100%;
     padding-bottom: 10px;
     padding-top: 20px;
 }
 
 .social-button {
-    color: #22aacc;
+    color: #06C7CA;
     display: inline-block;
     height: 60px;
     width: 60px;
