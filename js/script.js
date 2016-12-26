@@ -43,8 +43,9 @@ $(document).ready(function () {
 
 
         $("#dynamicModalTitle").text(title);
-        $("#dynamicModalBody").load(url);
-        $("#dynamicModal").modal({show: true});
+        $("#dynamicModalBody").load(url, function () {
+            $("#dynamicModal").modal({show: true});
+        });
     }
 
     function showDynamicModalForElement(element) {
