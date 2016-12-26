@@ -54,6 +54,11 @@ $(document).ready(function () {
         showDynamicModal(title, url, size);
     }
 
+    window.dynamicModal = {
+        show: showDynamicModal,
+        showElement: showDynamicModalForElement
+    };
+
     if (location.hash.length > 0) {
         if ($(location.hash).hasClass("dynamic-modal-trigger")) {
             showDynamicModalForElement($(location.hash));
