@@ -16,7 +16,7 @@ a {
 }
 
 a:focus, a:hover {
-    color: #430787;
+    color: #3e077a;
 }
 
 .footer {
@@ -87,15 +87,60 @@ section {
     right: 0;
 }
 
+.project-tile-inner {
+    margin: 0 auto;
+    max-width: 400px;
+    min-width: 250px;
+}
+
+.project-tile .hovereffect {
+    max-width: 360px;
+}
+
+.hovereffect.hover-blue .overlay {
+    background: #06C7CA;
+}
+
+.hovereffect.hover-blue p.icon-links a {
+    color: #5207C5;
+}
+
+.hovereffect.hover-blue p.icon-links a:hover {
+    color: #3e077a;
+}
+
+.hovereffect.hover-purple .overlay {
+    background: #5207C5;
+}
+
+.hovereffect.hover-purple p.icon-links a {
+    color: #06C7CA;
+}
+.hovereffect.hover-purple p.icon-links a:hover {
+    color: #06989b;
+}
+
 .project-tile .project-link {
     display: block;
     position: relative;
     max-width: 400px;
     margin: 0 auto;
+    z-index: -1;
+}
+
+.project-overlay {
+}
+
+.project-overlay .project-overlay-link {
+    font-size: 64px;
 }
 
 @media (min-width: 767px) {
     .project-tile {
+        margin: 0 0 30px;
+    }
+
+    .project-overlay {
         margin: 0 0 30px;
     }
 }
