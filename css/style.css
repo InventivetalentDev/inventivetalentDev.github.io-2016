@@ -15,7 +15,7 @@ a {
     color: #5207C5;
 }
 
-a:focus, a:hover{
+a:focus, a:hover {
     color: #430787;
 }
 
@@ -114,6 +114,8 @@ section {
     width: 100%;
     padding-bottom: 10px;
     padding-top: 20px;
+
+    line-height: 55px;
 }
 
 .social-button {
