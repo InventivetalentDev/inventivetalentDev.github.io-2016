@@ -32,6 +32,8 @@ $(document).ready(function () {
 
     // Dynamic modal
     function showDynamicModal(title, url, size) {
+        $("#dynamicModalBody").empty();
+
         $("#dynamicModalDialog").removeClass("modal-sm");
         $("#dynamicModalDialog").removeClass("modal-lg");
         if (size === "sm") {
