@@ -116,6 +116,7 @@ section {
 .hovereffect.hover-purple p.icon-links a {
     color: #06C7CA;
 }
+
 .hovereffect.hover-purple p.icon-links a:hover {
     color: #06989b;
 }
@@ -192,3 +193,6 @@ section {
     margin: 4px 0;
 }
 
+.hide-async-css {
+    display: none;
+}

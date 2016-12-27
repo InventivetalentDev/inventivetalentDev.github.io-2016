@@ -4,9 +4,7 @@
     <title>inventivetalent - Development and Web Design</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link href="css/hovereffect.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 
     <link id="favicon" rel="shortcut icon" type="image/png" href="favicon.png">
@@ -45,6 +43,11 @@
     <meta name="robots" content="index, follow">
 </head>
 <body id="page-top">
+<noscript id="async-css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="css/hovereffect.min.css" rel="stylesheet">
+</noscript>
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top custom-navbar">
     <div class="container">
@@ -109,7 +112,7 @@
                     <div class="project-tile-inner">
                         <div class="hovereffect hover-purple">
                             <img class="img-responsive" src="img/projects/spiget.png" alt="Spiget" draggable="false">
-                            <div class="overlay">
+                            <div class="overlay hide-async-css">
                                 <h2>SpiGet</h2>
                                 <p class="icon-links">
                                     <a href="https://spiget.org" target="_blank">
@@ -129,7 +132,7 @@
                     <div class="project-tile-inner">
                         <div class="hovereffect hover-blue">
                             <img class="img-responsive" src="img/projects/mineskin.png" alt="Mineskin" draggable="false">
-                            <div class="overlay">
+                            <div class="overlay hide-async-css">
                                 <h2>MineSkin</h2>
                                 <p class="icon-links">
                                     <a href="https://mineskin.org" target="_blank">
@@ -149,7 +152,7 @@
                     <div class="project-tile-inner">
                         <div class="hovereffect hover-purple">
                             <img class="img-responsive" src="img/projects/webrender.png" alt="Webrender" draggable="false">
-                            <div class="overlay">
+                            <div class="overlay hide-async-css">
                                 <h2>Web Render</h2>
                                 <p class="icon-links">
                                     <a href="https://web-render.inventivetalent.org" target="_blank">
@@ -171,7 +174,7 @@
                     <div class="project-tile-inner">
                         <div class="hovereffect hover-blue">
                             <img class="img-responsive" src="img/projects/tools.png" alt="Tools" draggable="false">
-                            <div class="overlay">
+                            <div class="overlay hide-async-css">
                                 <h2>Tools</h2>
                                 <p class="icon-links">
                                     <a href="https://tools.inventivetalent.org" target="_blank">
@@ -191,7 +194,7 @@
                     <div class="project-tile-inner">
                         <div class="hovereffect hover-purple">
                             <img class="img-responsive" src="img/projects/placeholder_blue.png" alt="?" draggable="false">
-                            <div class="overlay">
+                            <div class="overlay hide-async-css">
                                 <h2>?</h2>
                                 <!--
                                 <p class="icon-links">
@@ -213,7 +216,7 @@
                     <div class="project-tile-inner">
                         <div class="hovereffect hover-blue">
                             <img class="img-responsive" src="img/projects/placeholder_purple.png" alt="?" draggable="false">
-                            <div class="overlay">
+                            <div class="overlay hide-async-css">
                                 <h2>?</h2>
                                 <!--
                                 <p class="icon-links">
@@ -323,6 +326,24 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script async src="https://platform.twitter.com/widgets.js"></script>
 
+<script>
+    // Based on https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+    var loadAsyncCss = function () {
+        var asyncCss = $("#async-css");
+        var newElement = $("<div></div>");
+
+        newElement.html(asyncCss.text());
+        newElement.appendTo($("body"));
+
+        asyncCss.remove();
+
+        // Show hidden elements
+        setTimeout(function () {
+            $(".hide-async-css").fadeIn();
+        }, 100);
+    };
+    $("window").on("load", loadAsyncCss());
+</script>
 <script async src="js/script.min.js"></script>
 </body>
 </html>
