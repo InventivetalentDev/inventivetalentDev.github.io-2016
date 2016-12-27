@@ -54,9 +54,11 @@ a:focus, a:hover {
 }
 
 .header .alias {
+    margin-top: 0;
     margin-bottom: 0;
     font-weight: bold;
     font-size: 36px;
+    line-height: 1.42857143;
 }
 
 .header .name {
