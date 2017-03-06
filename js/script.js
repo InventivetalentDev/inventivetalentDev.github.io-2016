@@ -20,7 +20,7 @@ $(document).ready(function () {
             oneDay = 24 * 60 * 60 * 1000;
             diffDays = (d2 - Date.parse(d1)) / oneDay;
             return diffDays;
-        })("March 10, 1999", new Date()) / 365);
+        })("March 10, 1999", new Date()) / 365.242);
         $("#age").text(Math.round(exactAge * 1000) / 1000);
         $("#age").attr("title", exactAge);
     }, 1000);
