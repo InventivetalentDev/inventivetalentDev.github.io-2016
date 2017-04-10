@@ -73,4 +73,9 @@ $(document).ready(function () {
 
         showDynamicModalForElement($(this));
     });
+
+    $(".hidden-project-about-text").each(function () {
+        var elem = $(this);
+        elem.load(elem.data("about-src"));
+    })
 });
