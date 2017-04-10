@@ -76,6 +76,8 @@ $(document).ready(function () {
 
     $(".hidden-project-about-text").each(function () {
         var elem = $(this);
-        elem.load(elem.data("about-src"));
+        elem.load(elem.data("about-src"),function () {
+            elem.hide();
+        });
     })
 });
