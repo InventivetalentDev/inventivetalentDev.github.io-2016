@@ -1,0 +1,18 @@
+<div id="docContainer">
+</div>
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "https://docs.inventivetalent.org/github/getRepos.php",
+            success: function (data) {
+                var repos = data.data.items;
+                var repoNames = [];
+                $.each(repos, function (index, repo) {
+                    repoNames.push(repo.name);
+                    $("#docContainer").append("<div><a href='https://inventivetalent.org/" + repo.name + "/apidocs' target='_blank'>" + repo.name + "</a></div>");
+                });
+            }
+        })
+    });
+</script>
