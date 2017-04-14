@@ -8,7 +8,7 @@
 
 
 <script>
-    $(document).ready(function () {
+    (function () {
         $.ajax({
             url: "https://docs.inventivetalent.org/github/getRepos.php",
             success: function (data) {
@@ -22,5 +22,5 @@
                 $("#lastUpdateText").text("Last updated: " + new Date(data.cacheTime * 1000).toLocaleString());
             }
         })
-    });
+    })();
 </script>
