@@ -1,5 +1,11 @@
-<div id="docContainer">
+<div style="padding-bottom: 20px;">
+    <div id="docContainer" style="padding-bottom: 30px;">
+    </div>
+    <div>
+        <span class="text-muted pull-right" id="lastUpdateText"></span>
+    </div>
 </div>
+
 
 <script>
     $(document).ready(function () {
@@ -12,6 +18,8 @@
                     repoNames.push(repo.name);
                     $("#docContainer").append("<div><a href='https://inventivetalent.org/" + repo.name + "/apidocs' target='_blank'>" + repo.name + "</a></div>");
                 });
+
+                $("#lastUpdateText").text("Last updated: " + new Date(data.cacheTime * 1000).toLocaleString());
             }
         })
     });
