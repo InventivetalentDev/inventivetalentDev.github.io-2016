@@ -27,7 +27,8 @@ $(document).ready(function () {
 
     var quotes = [
         "If you're homophobic you should probably leave now and get some help.",
-        "Life is free to play, but pay to win"
+        "Life is free to play, but pay to win",
+        "Heroes never die!"
     ];
     $("#randomQuotes").text(quotes[Math.floor(Math.random() * quotes.length)]);
 
