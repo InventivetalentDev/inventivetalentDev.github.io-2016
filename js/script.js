@@ -45,6 +45,7 @@ $(document).ready(function () {
             $("#dynamicModalDialog").addClass("modal-lg");
         }
 
+        _gaq.push(['_trackPageview', '__modal__' + url]);
 
         $("#dynamicModalTitle").text(title);
         $("#dynamicModalBody").load(url, function () {
@@ -78,7 +79,7 @@ $(document).ready(function () {
 
     $(".hidden-project-about-text").each(function () {
         var elem = $(this);
-        elem.load(elem.data("about-src"),function () {
+        elem.load(elem.data("about-src"), function () {
             elem.hide();
         });
     })
