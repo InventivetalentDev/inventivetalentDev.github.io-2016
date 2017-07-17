@@ -1,4 +1,59 @@
 $(document).ready(function () {
+
+    String.prototype.replaceAll = function (search, replacement) {
+        var target = this;
+        return target.replace(new RegExp(search, 'g'), replacement);
+    };
+
+    // Load Projects
+    console.info("Loading Projects...")
+    $.get("/projects/projectTemplate.html", function (template) {
+        console.log(template)
+        $.get("/projects/projects.json", function (data) {
+            console.log(data)
+            var $container = $("#projectsContainer");
+
+            var $currentRow;
+            var $currentCol;
+            $.each(data, function (i, project) {
+                console.log("Loading #" + i + ": " + project.title);
+                if (i % 3 == 0) {
+                    $currentRow = $("<div class='row text-center'>");
+                    $currentRow.appendTo($container);
+                }
+
+                $currentCol = $("<div class='col-sm-4'>");
+                $currentCol.appendTo($currentRow);
+
+                var $replaced = $(template
+                    .replaceAll("__TITLE__", project.title)
+                    .replaceAll("__LINK_IMG__", project.link + "?utm_source=inventivetalent.org&utm_medium=project_image_link")
+                    .replaceAll("__LINK_DIRECT__", project.link + "?utm_source=inventivetalent.org&utm_medium=project_link")
+                    .replaceAll("__IMG__", project.image)
+                    .replaceAll("__ABOUT__", project.about)
+                    .replaceAll("__HOVER_CLASS__", i % 2 == 0 ? "hover-purple" : "hover-blue"));
+                $currentCol.append($replaced);
+            });
+
+
+            setTimeout(function () {
+                $(".dynamic-modal-trigger").click(function (e) {
+                    e.preventDefault();
+
+                    showDynamicModalForElement($(this));
+                });
+
+                $(".hidden-project-about-text").each(function () {
+                    var elem = $(this);
+                    elem.load(elem.data("about-src"), function () {
+                        elem.hide();
+                    });
+                })
+            }, 500)
+        });
+    });
+
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('.page-scroll a').bind('click', function (event) {
         var $anchor = $(this);
@@ -70,17 +125,4 @@ $(document).ready(function () {
             showDynamicModalForElement($(location.hash));
         }
     }
-
-    $(".dynamic-modal-trigger").click(function (e) {
-        e.preventDefault();
-
-        showDynamicModalForElement($(this));
-    });
-
-    $(".hidden-project-about-text").each(function () {
-        var elem = $(this);
-        elem.load(elem.data("about-src"), function () {
-            elem.hide();
-        });
-    })
 });

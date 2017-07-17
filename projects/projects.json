@@ -1,0 +1,50 @@
+[
+  {
+    "title": "SpiGet",
+    "link":"https://spiget.org",
+    "image": "img/projects/spiget.png",
+    "about": "pages/projects/spiget.html"
+  },
+  {
+    "title":"Remote Slide",
+    "link":"https://remote-sli.de",
+    "image":"img/projects/remoteslide.png",
+    "about":"pages/projects/remoteslide.html"
+  },
+  {
+    "title":"SpigotMC",
+    "link":"https://www.spigotmc.org/resources/authors/inventivetalent.6643/",
+    "image":"img/projects/spigotmc.png",
+    "about":"pages/projects/spigotmc.html"
+  },
+  {
+    "title":"MCAssets",
+    "link":"https://mcassets.ga",
+    "image":"img/projects/mcassets.png",
+    "about":"pages/projects/mcassets.html"
+  },
+  {
+    "title":"Web Render",
+    "link":"https://webrender.ga",
+    "image":"img/projects/webrender.png",
+    "about":"pages/projects/webrender.html"
+  },
+  {
+    "title":"MC Auth",
+    "link":"https://mcauth.ga",
+    "image":"img/projects/mcauth.png",
+    "about":"pages/projects/mcauth.html"
+  },
+  {
+    "title":"MTSA",
+    "link":"https://inventivetalent.org/MakeTwitterSquareAgain",
+    "image":"img/projects/mtsa.png",
+    "about":"pages/projects/mineskin.html"
+  },
+  {
+    "title":"MineSkin",
+    "link":"https://mineskin.org",
+    "image":"img/projects/mineskin.png",
+    "about":"pages/projects/mineskin.html"
+  }
+]

@@ -111,6 +111,11 @@ section {
     color: #3e077a;
 }
 
+.hovereffect.hover-blue img{
+    background-color:#5207C5;
+}
+
+
 .hovereffect.hover-purple .overlay {
     background: #5207C5;
 }
@@ -121,6 +126,10 @@ section {
 
 .hovereffect.hover-purple p.icon-links a:hover {
     color: #06989b;
+}
+
+.hovereffect.hover-purple img{
+    background-color:#06C7CA;
 }
 
 .project-tile .project-link {
