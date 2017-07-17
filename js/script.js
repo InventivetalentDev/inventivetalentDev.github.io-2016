@@ -8,9 +8,7 @@ $(document).ready(function () {
     // Load Projects
     console.info("Loading Projects...")
     $.get("/projects/projectTemplate.html", function (template) {
-        console.log(template)
         $.get("/projects/projects.json", function (data) {
-            console.log(data)
             var $container = $("#projectsContainer");
 
             var $currentRow;
