@@ -12,6 +12,12 @@
     "about": "pages/projects/mineskin.html"
   },
   {
+    "title": "MCGameInfo",
+    "link": "https://mcgame.info",
+    "image": "img/projects/mcgi.png",
+    "about": "pages/projects/mcgi.html"
+  },
+  {
     "title": "Remote Slide",
     "link": "https://remote-sli.de",
     "image": "img/projects/remoteslide.png",
