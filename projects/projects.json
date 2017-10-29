@@ -12,16 +12,10 @@
     "about": "pages/projects/mineskin.html"
   },
   {
-    "title": "MCGameInfo",
-    "link": "https://mcgame.info",
-    "image": "img/projects/mcgi.png",
-    "about": "pages/projects/mcgi.html"
-  },
-  {
-    "title": "MultiTube",
-    "link": "https://multitube.cf",
-    "image": "img/projects/multitube.png",
-    "about": "pages/projects/multitube.html"
+    "title": "SkinRender",
+    "link": "https://skinrender.ga",
+    "image": "img/projects/skinrender.png",
+    "about": "pages/projects/skinrender.html"
   },
   {
     "title": "Remote Slide",
@@ -52,6 +46,18 @@
     "link": "https://webrender.ga",
     "image": "img/projects/webrender.png",
     "about": "pages/projects/webrender.html"
+  },
+  {
+    "title": "MultiTube",
+    "link": "https://multitube.cf",
+    "image": "img/projects/multitube.png",
+    "about": "pages/projects/multitube.html"
+  },
+  {
+    "title": "MCGameInfo",
+    "link": "https://mcgame.info",
+    "image": "img/projects/mcgi.png",
+    "about": "pages/projects/mcgi.html"
   },
   {
     "title": "MTSA",
