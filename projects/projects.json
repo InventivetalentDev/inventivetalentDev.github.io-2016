@@ -48,10 +48,10 @@
     "about": "pages/projects/webrender.html"
   },
   {
-    "title": "MultiTube",
-    "link": "https://multitube.cf",
-    "image": "img/projects/multitube.png",
-    "about": "pages/projects/multitube.html"
+    "title": "NeuralSkin",
+    "link": "https://neuralskin.inventivetalent.org",
+    "image": "img/projects/neuralskin.png",
+    "about": "pages/projects/neuralskin.html"
   },
   {
     "title": "MCGameInfo",
