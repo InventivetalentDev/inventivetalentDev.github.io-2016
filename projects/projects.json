@@ -12,10 +12,10 @@
     "about": "pages/projects/mineskin.html"
   },
   {
-    "title": "SkinRender",
-    "link": "https://skinrender.ga",
-    "image": "img/projects/skinrender.png",
-    "about": "pages/projects/skinrender.html"
+    "title": "MineRender",
+    "link": "https://minerender.org",
+    "image": "img/projects/minerender.png",
+    "about": "pages/projects/minerender.html"
   },
   {
     "title": "Remote Slide",
