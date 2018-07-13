@@ -42,12 +42,6 @@
     "about": "pages/projects/mcassets.html"
   },
   {
-    "title": "Web Render",
-    "link": "https://webrender.ga",
-    "image": "img/projects/webrender.png",
-    "about": "pages/projects/webrender.html"
-  },
-  {
     "title": "NeuralSkin",
     "link": "https://neuralskin.inventivetalent.org",
     "image": "img/projects/neuralskin.png",
